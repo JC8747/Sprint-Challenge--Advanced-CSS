@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    An adpative website changes at pre-determined breakpoints based on criteria such as screen size. A fully responsive website changes dynamically to fit any given space. The end effect can be similiar depending on sophistication, but each has their uses cases (e.g. creating a design for a specific device)
 
 2. Describe what it means to be mobile first vs desktop first.
+    The "X device first" idea is based on designing and implementing for one device type before others. A mobile first website will have its design built for mobile devices (e.g. favoring a hamburger stack over displaying all posibile nav links at once), and a desktop first website will favor desktop friendly design such as large, widge images and text sections.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    Setting the font size default to 62.5% makes calculating REMs easier. The browser default font size is 16px, and 62.5% of that is 10px. By setting 62.5% as the default, we know that 1rem of font size is 10px, and that gives us a guideline that can be easier to use in adaptive or responsive design.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessors are essentialy powerups for CSS. Preprocessors function as their own code layer behind CSS and  they allow the use of tools such as a variables and mixins. Preprocessors also allow for nesting code to help select the right elements more easily, and sometimes create a cleaner codebase.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    My favorite concept in preprocessing is nesting, as it can allows for much easier element selection.
+    Conceptually I do not have issues, but the most difficult part has been not defaulting to a memorized methodsfor accomplishing a task in CSS when working in LESS.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
