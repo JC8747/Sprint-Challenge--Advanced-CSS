@@ -1,12 +1,21 @@
 // Home Content
-
-.home {
   .topbar{
     width:800px;
-    margin: 0 auto;
     @media @phone{
         max-width:500px;
     }//mediaq
+    h1{
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 200;
+    }//h1
+    .orbit{
+      max-width: 100%;
+     @media @phone{
+       max-width: 500px;
+       height: auto;
+     }//mediaq
+    }//orbit
   }//topbar
 
   .intro {
@@ -98,7 +107,11 @@
         margin-bottom: 26px;
       }
       .btn {
-      }
+        &:hover, &:active{
+          background-color: black;
+          color:deepskyblue;  
+        }//hover
+      }//btn
     }
 
     .walk-img {
@@ -115,4 +128,3 @@
         }//img
       }//walkimg
     }
-}// home
