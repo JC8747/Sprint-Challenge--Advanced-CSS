@@ -1,9 +1,17 @@
 // Home Content
-  .topbar h1{
-    display:inline-block;
-    text-align: center;
-    font-weight: 200;
-  }
+
+.home {
+  .topbar{
+    width:800px;
+    margin: 0 auto;
+    @media @phone{
+        max-width:500px;
+        width:100%;
+    .spacewalkers{
+      font-size: 20rem;
+    }//spacewalkers
+    }//mediaq
+  }//topbar
 
   .intro {
 
@@ -21,13 +29,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      .sky{
+        display:none;
+      }//sky
+      .launch{
+        display:none;
+      
+      }//launch
+    }//mediaq
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+      @media @phone{
+        width: 100%;
+        margin: 5%;
+      }
+    }//img
   }
 
   .visit-planets {

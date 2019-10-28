@@ -201,10 +201,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .topbar h1 {
-  display: inline-block;
-  text-align: center;
-  font-weight: 200;
+.home .topbar {
+  width: 800px;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  .home .topbar {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .topbar .spacewalkers {
+    font-size: 20rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -217,11 +225,25 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width:500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 5%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
