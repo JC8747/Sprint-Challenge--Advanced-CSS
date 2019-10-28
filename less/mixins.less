@@ -1,24 +1,27 @@
 // Mixins Here
-.btn {
-    width: 70%;
+.btnsettings{
+    width: 30%;
     height: 0 auto;
-    margin: 0 2% 0;
+    margin: 0 0 0;
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    background-color: deepskyblue;
-    color: black;   
-    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke; 
+    border-radius: 5px;
+    &:hover{
+        background-color: whitesmoke;
+        color:black;
+    }
     @media @phone{
-        width:100%;
+        width:80%;
         margin: 5% 0 10%;
     }
 }
 
 .navmobile{
     font-size: 1.25rem;
-    color:red;
-    &hover &active{
+    &:hover{
         background-color: deepskyblue;
     }
 }

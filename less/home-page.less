@@ -1,25 +1,21 @@
 // Home Content
   .topbar{
-    width:800px;
-    @media @phone{
-        max-width:500px;
-    }//mediaq
     h1{
       text-align: center;
       font-size: 5rem;
       font-weight: 200;
     }//h1
-    .orbit{
-      max-width: 100%;
-     @media @phone{
-       max-width: 500px;
-       height: auto;
-     }//mediaq
-    }//orbit
   }//topbar
 
   .intro {
-
+    .orbit{
+      max-width: 800px;
+      height:auto;
+      @media @phone{
+        max-width: 500px;
+        height: auto;
+     }//mediaq
+    }//orbit
     h2 {
       padding: 15px;
     }
@@ -80,12 +76,6 @@
   }//visitplanets
 
   .walk {
-    @media @phone{
-      width:500px;
-      margin: 5%;
-      display: block;
-      padding: 0;
-    }//mediaq
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -93,10 +83,6 @@
     justify-content: center;
 
     .walk-text {
-      @media @phone{
-        width:100%;
-        margin: 5%;
-      }
       width: 50%;
 
       h3 {
@@ -106,11 +92,8 @@
       p {
         margin-bottom: 26px;
       }
-      .btn {
-        &:hover, &:active{
-          background-color: black;
-          color:deepskyblue;  
-        }//hover
+      .btn{
+        .btnsettings();
       }//btn
     }
 
