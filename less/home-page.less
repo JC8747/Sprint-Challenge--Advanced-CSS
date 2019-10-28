@@ -6,10 +6,6 @@
     margin: 0 auto;
     @media @phone{
         max-width:500px;
-        width:100%;
-    .spacewalkers{
-      font-size: 20rem;
-    }//spacewalkers
     }//mediaq
   }//topbar
 
@@ -61,9 +57,26 @@
     p {
       margin-top: 13px;
     }
-  }
+
+    img{
+      @media (min-width:501px){
+        display:none;
+      }
+      @media @phone{
+          width:100%;
+          margin:5%;
+          height:100%;
+      }//mediaq  
+    }//img
+  }//visitplanets
 
   .walk {
+    @media @phone{
+      width:500px;
+      margin: 5%;
+      display: block;
+      padding: 0;
+    }//mediaq
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -71,6 +84,10 @@
     justify-content: center;
 
     .walk-text {
+      @media @phone{
+        width:100%;
+        margin: 5%;
+      }
       width: 50%;
 
       h3 {
@@ -80,12 +97,14 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
       }
     }
 
     .walk-img {
+      @media (max-width:500px){
+        display:none;
+      }
       width: 46%;
       margin-left: 4%;
       
@@ -93,7 +112,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+        }//img
+      }//walkimg
     }
-  }
 }// home
